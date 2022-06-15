@@ -158,14 +158,17 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 % Name
 \makeatletter
 
-\newcommand\name[1]{\def\@name{#1}}
+\newcommand\name[2]{\def\@name{#1} \def\@url{#2}}
 \name{}
+\url{}
 
 \newcommand\printname{
   \typeout {kokoko}
   \typeout \spaceskip
   \spaceskip \namespaceskip \relax
   \textbf{\LARGE\textls[110]{\textsc{\@name}}}
+  \linebreak
+  \small{\@url}
 }
 
 \makeatother
@@ -185,7 +188,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \makeatletter
 \newcommand\makeheader{
   \begin{center}
-    \begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
+    \begin{tabu} to 1\textwidth { X[1,m] X[2,c,m] X[r,m] }
       \printaddress & \printname & \printcontacts \\
     \end{tabu}
   \end{center}
