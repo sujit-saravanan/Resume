@@ -22,12 +22,12 @@
 
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
 \documentclass[]{cv}
-
+\hyphenchar\font=-1
 % For mathematical symbols
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Sujit Saravanan}
+\name{Sujit Saravanan\linebreak \footnotesize \mbox{https://sujit-saravanan.github.io/portfolio/}}
 
 \address{\mbox{sujitsaravanan15@gmail.com} \linebreak (571) 361-9963}
 \contacts{\mbox{https://github.com/sujit-saravanan}}
@@ -45,20 +45,28 @@
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Languages, Technologies, and Skills}
-		\begin{cvsubsection}{}{}{}	
+	\begin{cvsection}{Technical Abilities}
+		\begin{cvsubsection}{Languages}{}{}	
 			\begin{itemize}
 				\item C++; C; MIPS Assembly; Python; JavaScript; HTML/CSS
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Technologies}{}{}	
+			\begin{itemize}
 				\item Linux; Windows; CMake; OpenGL; Git; JetBrains Products; Fusion360; KiCAD
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Skills}{}{}	
+			\begin{itemize}
 				\item Industrial 3D Modelling; 3D Printing; CNC Machining; PCB Design; Public Speaking
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{\mbox{Data-Orienteed OpenGL Renderer (2022):}}{}{C/C++ OpenGL}
 			\begin{itemize}
-				\item \textbf{Data-Orienteed OpenGL Renderer (2022):}  An extremely performant, 2d renderer that makes use of modern OpenGL and Data Oriented Design philosophies.  C/C++ OpenGL
+				\item  An extremely performant, 2d renderer that makes use of modern OpenGL and Data Oriented Design philosophies.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
